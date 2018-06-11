@@ -23,6 +23,10 @@ function [C] = gwb_out(data,datatype,param)
 %   --> Need to add units option so user can specify different options for
 %       units for a given parameter
 %   --> Just handling this by adding new cases as needed
+%
+%   Example Command:
+%      data = getFile(outFile);
+%      gwb_out(data,'system',{'Temperature','Solution mass'})
 
 %% FILE MANAGEMENT BLOCK
 %--> Now handled in executive function to avoid redundant operations
