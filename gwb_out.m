@@ -332,6 +332,7 @@ for i=1:length(param)
             %    Should also work for each species involved in redox pair
             %    when that redox pair is coupled.
         elseif strcmp(datatype,'saturation')
+            % --> Fails for minerals with spaces in them. Need to fix this.
             %For mineral saturation index
             lab_val = textscan(chunk{di},fslocal);
             %Remove empty cells, accounts for the fact that there are two
